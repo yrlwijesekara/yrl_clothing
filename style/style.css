@@ -1,62 +1,141 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.container{
+
+:root {
+    --main-color: rgb(0, 190, 123);
+    --text-color: rgb(230, 230, 230);
+}
+
+.container {
     width: 1200px;
     margin: auto;
 }
-@media (max-width: 1200px){
-    .container{
-        width:calc(100% - 80px);
+
+@media (max-width: 1200px) {
+    .container {
+        width: calc(100% - 80px);
     }
 }
-.nav-1{
-    width: 100%;
-    height: 50px;
+
+.nav-1 {
+
+
     background-color: black;
 }
-.nav-1-c{
-    height: 100%;
-    background-color: green;
+
+.nav-1-c {
+
+    /*background-color: green;*/
     display: flex;
 }
-.nav-1-c-1,.nav-1-c-2{
+
+.nav-1-c-1,
+.nav-1-c-2 {
     width: calc(100% / 2);
-    height: 100%;
-   
+    height: 50px;
+
 }
-.nav-1-c-1{
-    background-color: yellow;
+
+.nav-1-c-1 {
+    /*background-color: yellow;*/
     align-items: center;
     display: flex;
 }
-.nav-1-c-1 ul{
+
+.nav-1-c-1 ul {
     display: flex;
-   
+
 }
-.nav-1-c-1 ul li{
+
+.nav-1-c-1 ul li {
     display: flex;
     list-style: none;
     padding: 0 10px;
     border-right: 2px solid gray;
 }
-.nav-1-c-1 ul li:first-child{
+
+.nav-1-c-1 ul li:first-child {
     padding-left: 0;
 }
-.nav-1-c-1 ul li:last-child{
+
+.nav-1-c-1 ul li:last-child {
     border-right: none;
+    padding-right: 0;
 }
-.nav-1-c-1 ul li img{
+
+.nav-1-c-1 ul li img {
     width: 30px;
-   
-    
+
+
 }
-.nav-1-c-1 ul li  h4{
+
+.nav-1-c-1 ul li h4 {
     font-family: sans-serif;
     font-size: 14px;
+    color: var(--text-color);
 }
-.nav-1-c-2{
-    background-color: brown;
+
+.nav-1-c-1 ul li a {
+    font-family: sans-serif;
+    color: var(--text-color);
+    transition: all .5s ease;
+}
+
+.nav-1-c-1 ul li a:hover {
+    color: var(--main-color);
+}
+
+.nav-1-c-2 {
+    /*background-color: brown;*/
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.nav-1-c-2 ul li {
+    display: inline-block;
+    border-right: 2px solid gray;
+    padding: 0 10px;
+}
+
+.nav-1-c-2 ul li a {
+    font-family: sans-serif;
+    color: var(--text-color);
+    transition: all .5s ease;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.nav-1-c-2 ul li:first-child {
+    padding-left: 0;
+}
+
+.nav-1-c-2 ul li:last-child {
+    border-right: none;
+    padding-right: 0;
+}
+
+.nav-1-c-2 ul li a:hover {
+    color: var(--main-color);
+}
+
+@media(max-width:992px) {
+    .nav-1-c {
+        display: block;
+    }
+
+    .nav-1-c-1,
+    .nav-1-c-2 {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .nav-1-c h4,
+    .nav-1-c a {
+        font-size: 12px;
+    }
 }
