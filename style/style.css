@@ -94,9 +94,13 @@
     align-items: center;
     justify-content: right;
 }
+.nav-1-c-2 ul {
+    display: flex;
+    
+}
 
 .nav-1-c-2 ul li {
-    display: inline-block;
+    list-style: none;;
     border-right: 2px solid gray;
     padding: 0 10px;
 }
@@ -122,6 +126,10 @@
 .nav-1-c-2 ul li a:hover {
     color: var(--main-color);
 }
+.nav-1-c-2 ul li:nth-last-child(1),
+.nav-1-c-2 ul li:nth-last-child(2) {
+    display: none;
+}
 
 @media(max-width:992px) {
     .nav-1-c {
@@ -134,8 +142,119 @@
         justify-content: center;
     }
 
-    .nav-1-c h4,
+ 
+}
+@media(max-width:576px){
+       .nav-1-c h4,
     .nav-1-c a {
-        font-size: 12px;
+        font-size: 12px !important;    
     }
+    .nav-1-c ul li{
+        padding: 0 5px !important;
+    }
+    .nav-1-c-2 ul li:nth-last-child(1),
+.nav-1-c-2 ul li:nth-last-child(2) {
+    display: flex;
+}
+
+}
+
+
+.nav-2{
+    width: 100%;
+   /* background-color: red;*/
+    height: 80px;
+}
+.nav-2-c {
+    height: 100%;
+    display: flex;
+}
+.nav-2-c-1,
+.nav-2-c-2,
+.nav-2-c-3 {
+    height: 100%;
+}
+
+.nav-2-c-1{
+    width: 200px;
+    /*background-color: blue;*/
+    display: flex;
+    align-items: center;
+    
+}
+.nav-2-c-1 img {
+    max-width: 180px; /* Slightly smaller than container */
+    max-height: 70px; /* Slightly smaller than nav height */
+    display: block;
+}
+/* Make logo responsive */
+@media (max-width: 768px) {
+    .nav-2-c-1 .logo {
+        max-width: 140px;
+    }
+}
+
+.nav-2-c-2{
+    width: calc(100% - 400px);
+    /*background-color: green;*/
+    display: flex;
+    align-items: center;
+}
+.nav-2-c-2 ul li{
+    display: inline-block;
+    margin: 0 10px;
+    
+}
+.nav-2-c-2 ul li a {
+    color: black;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 0 20px;
+    transition: all .5s ease;
+    text-decoration: none;
+}
+.nav-2-c-2 ul li a:hover {
+    color: var(--main-color);
+}
+.nav-2-c-3{
+    width: 200px;
+    /*background-color: violet;*/
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.nav-2-c-3 ul li{
+    display: inline-block;
+    margin: 0 10px;
+}
+.nav-2-c-3 ul li:last-child {
+    margin-right: 0;
+}
+.nav-2-c-3 ul li i {
+    
+   
+    
+    font-size: 28px;
+    
+   
+}
+@media(max-width: 992px) {
+ .nav-2-c-2{
+    display: none;
+ }
+.nav-2-c-3 {
+   width: calc(100% - 200px);
+    
+}
+.nav-2-c-3 ul li:nth-child(1),
+.nav-2-c-3 ul li:nth-child(2) {
+    display: none;
+}
+.nav-2-c-3 ul li i{
+    font-size: 40px;
+    
+}
+
+
 }
