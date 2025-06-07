@@ -7,6 +7,23 @@
 :root {
     --main-color: rgb(0, 190, 123);
     --text-color: rgb(230, 230, 230);
+    --body-bg: #ffffff;
+    --body-text: #000000;
+    --nav-bg: #ffffff;
+    --card-bg: #f8f8f8;
+}
+
+body {
+    background-color: var(--body-bg);
+    color: var(--body-text);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-theme {
+    --body-bg: #121212;
+    --body-text: #e0e0e0;
+    --nav-bg: #1e1e1e;
+    --card-bg: #2d2d2d;
 }
 
 .container {
@@ -252,9 +269,34 @@
     display: none;
 }
 .nav-2-c-3 ul li i{
-    font-size: 40px;
+    font-size: 35px;
     
 }
 
 
+}
+
+/* Dark theme overrides */
+.dark-theme .nav-2 {
+    background-color: var(--nav-bg);
+}
+
+.dark-theme .nav-2-c-2 ul li a {
+    color: #e0e0e0;
+}
+.dark-theme .nav-2-c-2 ul li a:hover {
+    color: var(--main-color);
+}
+
+.dark-theme .nav-2-c-3 ul li i {
+    color: #e0e0e0;
+}
+
+#theme-toggle {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.dark-theme #theme-toggle {
+    color: var(--main-color);
 }
