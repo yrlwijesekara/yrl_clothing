@@ -460,8 +460,13 @@ width: 100%;
 .section-1{
     margin-top: 60px;
 }
+.section-1-c{
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+    grid-gap: 30px;
+}
 .section-1-card{
-    width: 300px;
+    
     height: 200px;
     background-color: red;
     border-radius: 10px;
@@ -471,6 +476,18 @@ width: 100%;
     justify-content: right;
     align-items: end;
 
+}
+@media(max-width: 1200px) {
+    .section-1-c {
+        grid-template-columns: auto auto;
+        grid-gap: 30px;
+    }
+}
+@media(max-width: 576px) {
+    .section-1-c {
+        grid-template-columns: auto;
+        grid-gap: 30px;
+    }
 }
 .section-1-card-bg{
     width: 100%;
