@@ -619,6 +619,12 @@ body.dark-theme {
 .product-bg img:last-child {
     opacity: 0;
 }
+.product:hover .product-bg img:last-child {
+    opacity: 1;
+}
+.product:hover .product-bg img:first-child {
+    opacity: 0;
+}
 .product-title{
     font-family: sans-serif;
     text-decoration: none;
@@ -652,6 +658,7 @@ body.dark-theme {
     font-family: sans-serif;
     font-size: 16px;
     font-weight: 600;
+    transition: all  .5s ease;
 }
 
 .product-detail-1 p span {
@@ -666,9 +673,10 @@ body.dark-theme {
     color: black;
     position: absolute;
     top: 0;
-    left: 100px;
+    left: 50px;
     white-space: nowrap;
     opacity: 0;
+    transition: all .5s ease;
 }
 
 .product-detail-2 {
@@ -685,4 +693,43 @@ body.dark-theme {
 
 .product-detail-2 ul li i {
     color: var(--main-color);
+}
+.product-icon{
+    width: 200px;
+    height: 200px;
+    background-color: transparent;
+    position: absolute;
+    z-index: 1;
+    right: -100px;
+    display: flex;
+    justify-content: right;
+}
+.product-icon ul li{
+    margin: 10px 0;
+    list-style: none;
+    transition: all;
+}
+.product-icon ul li:nth-child(1) {
+    transition-delay: 0;
+}
+.product-icon ul li:nth-child(2) {
+    transition-delay: 0.2s;
+}
+.product-icon ul li:nth-child(3) {
+    transition-delay: 0.4s;
+}
+.product-icon ul li i {
+    font-size: 20px;
+    color: black;
+    transition: all 1s ease;
+}
+.product:hover .product-icon ul li{
+    transform:translateX(-120px);
+}
+.product:hover .product-details-1 p{
+    opacity: 0;
+}
+.product:hover .product-details-1 a{
+    opacity: 1;
+    left: 0;
 }
