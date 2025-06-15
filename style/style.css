@@ -13,7 +13,8 @@
     --card-bg: #f8f8f8;
     --btn-border-color: white;
     /* New variable for button borders */
-    --btn-text-color: white;/* New variable for button text */
+    --btn-text-color: white;
+    /* New variable for button text */
 }
 
 body {
@@ -27,10 +28,11 @@ body.dark-theme {
     --body-text: #e0e0e0;
     --nav-bg: #1e1e1e;
     --card-bg: #2d2d2d;
-    
-    --btn-border-color: black;  /* Changed to white for dark mode */
-     /* Changed to white for dark mode */
-    --btn-text-color: black; 
+
+    --btn-border-color: black;
+    /* Changed to white for dark mode */
+    /* Changed to white for dark mode */
+    --btn-text-color: black;
 }
 
 .container {
@@ -253,13 +255,15 @@ body.dark-theme {
     text-decoration: none;
 }
 
-.nav-2-c-2 ul li a:hover  {
+.nav-2-c-2 ul li a:hover {
     color: var(--main-color);
 }
-.nav-home:hover .home-dropdown{
 
-        display: block;
+.nav-home:hover .home-dropdown {
+
+    display: block;
 }
+
 .home-dropdown {
     width: 200px;
     padding-top: 20px;
@@ -272,8 +276,8 @@ body.dark-theme {
 }
 
 
-.home-dropdowm-list{
-width: 100%;
+.home-dropdowm-list {
+    width: 100%;
     padding: 10px 10px;
     background-color: black;
     color: rgba(170, 146, 146, 0.966);
@@ -357,65 +361,78 @@ width: 100%;
 
 
 
-.header{
+.header {
     width: 100%;
     height: 600px;
-    position: relative; /* Add this */
-    margin-top: 0; /* Ensure no gap */
+    position: relative;
+    /* Add this */
+    margin-top: 0;
+    /* Ensure no gap */
 }
 
-.header .background{
+.header .background {
     width: 100%;
     height: 100%;
-    position: relative; /* Change from absolute to relative */
-    background-color: transparent; /* Remove green background */
+    position: relative;
+    /* Change from absolute to relative */
+    background-color: transparent;
+    /* Remove green background */
 }
 
-.header .background img{
+.header .background img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block; /* Removes any default spacing */
+    display: block;
+    /* Removes any default spacing */
 }
 
-.header-content{
+.header-content {
     height: 100%;
-    position: absolute; /* Change to absolute */
+    position: absolute;
+    /* Change to absolute */
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1;
-    background-color: transparent; /* Remove green background */
+    background-color: transparent;
+    /* Remove green background */
     display: flex;
     align-items: center;
 }
-.header-details{
+
+.header-details {
     margin-left: 200px;
 }
-.header-details h4{
+
+.header-details h4 {
     font-family: sans-serif;
     margin-top: 10px;
     font-size: 20px;
 }
-.header-details h1{
+
+.header-details h1 {
     font-family: sans-serif;
     font-size: 60px;
     color: white;
     margin-top: 10px;
 }
-.header-details p{
+
+.header-details p {
     font-family: sans-serif;
     font-size: 30px;
     color: white;
     margin-top: 10px;
 }
-.header-btn{
+
+.header-btn {
     margin-top: 20px;
     display: flex;
-    
-    
+
+
 }
-.header-btn a{
+
+.header-btn a {
     width: 150px;
     height: 40px;
     font-family: sans-serif;
@@ -430,43 +447,48 @@ width: 100%;
     align-items: center;
     justify-items: center;
     padding: 0 10px;
-    
+
 }
-.header-btn a:first-child:hover{
+
+.header-btn a:first-child:hover {
     background-color: transparent;
     border: 1px solid var(--btn-border-color);
     color: var(--btn-text-color);
 }
-.header-btn a:last-child{
+
+.header-btn a:last-child {
     margin-left: 20px;
-     background-color: transparent;
+    background-color: transparent;
     border: 1px solid var(--btn-border-color);
     color: var(--btn-text-color);
 }
-.header-btn a:last-child:hover{
+
+.header-btn a:last-child:hover {
     background-color: rgb(165, 136, 42);
     color: white;
-    border: 0px solid ;
+    border: 0px solid;
 }
 
-@media(max-width:768px){
-    .header-details{
+@media(max-width:768px) {
+    .header-details {
         margin: 0;
         margin-left: 20px;
     }
 }
 
 /*sectiom one*/
-.section-1{
+.section-1 {
     margin-top: 60px;
 }
-.section-1-c{
+
+.section-1-c {
     display: grid;
-    grid-template-columns: auto auto auto auto ;
+    grid-template-columns: auto auto auto auto;
     grid-gap: 30px;
 }
-.section-1-card{
-    
+
+.section-1-card {
+
     height: 200px;
     background-color: red;
     border-radius: 10px;
@@ -477,39 +499,45 @@ width: 100%;
     align-items: end;
 
 }
+
 @media(max-width: 1200px) {
     .section-1-c {
         grid-template-columns: auto auto;
         grid-gap: 30px;
     }
 }
+
 @media(max-width: 576px) {
     .section-1-c {
         grid-template-columns: auto;
         grid-gap: 30px;
     }
 }
-.section-1-card-bg{
+
+.section-1-card-bg {
     width: 100%;
     height: 100%;
     background-color: green;
     position: absolute;
     top: 0;
 
-    
+
 }
-.section-1-card-bg img{
+
+.section-1-card-bg img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: all .5s ease;
 
 }
-.section-1-card-bg img:hover{
+
+.section-1-card-bg img:hover {
     transform: scale(1.2);
-    
+
 }
-.section-1-card-details{
+
+.section-1-card-details {
     position: relative;
     padding: 10px;
     background-color: transparent;
@@ -518,59 +546,68 @@ width: 100%;
     top: 50px;
     transition: all .5s ease;
 }
-.section-1-card:hover .section-1-card-details{
+
+.section-1-card:hover .section-1-card-details {
     top: 0;
 }
 
-.section-1-card-details h2{
+.section-1-card-details h2 {
     font-family: sans-serif;
 }
-.section-1-card-details h4{
+
+.section-1-card-details h4 {
     font-family: sans-serif;
-   
+
     margin-bottom: 10px;
 }
-.section-1-card-details button{
+
+.section-1-card-details button {
     width: 150px;
     height: 40px;
     font-family: sans-serif;
     text-transform: uppercase;
     margin-top: 10px;
-    border:1px solid black;
+    border: 1px solid black;
     transition: all .5s ease;
     background-color: transparent;
 }
-.section-1-card:hover .section-1-card-details button{
-    opacity:   1;
+
+.section-1-card:hover .section-1-card-details button {
+    opacity: 1;
     border: 0px solid transparent;
     background-color: var(--main-color);
 }
-.section-2{
+
+.section-2 {
     width: 100%;
     margin-top: 60px;
-  
+
 }
-.product-image{
+
+.product-image {
     width: 100%;
-    height: 300px;
+    height: 350px;
     position: relative;
-    
+
 }
-.product{
-    width:300px;
-    height: 400px;
-    background-color: blue;
+
+.product {
+    width: 300px;
+    
+   /* background-color: blue;*/
     position: relative;
     overflow: hidden;
     border-radius: 5px;
 }
-.product-bg{
+
+.product-bg {
     width: 100%;
     height: 100%;
     position: absolute;
-   
+
 }
-.product-bg img{
+
+.product-bg img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -578,42 +615,74 @@ width: 100%;
     position: absolute;
     object-fit: cover;
 }
-.product-bg img:last-child{
+
+.product-bg img:last-child {
     opacity: 0;
 }
-.product-detail{
+.product-title{
+    font-family: sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+    display: block;
+}
+
+.product-detail {
     width: 100%;
-display: flex;
-    background-color: yellow;
+    display: flex;
+   /* background-color: yellow;*/
+    align-items: center;
+    margin-top: 20px;
 }
+
 .product-detail-1,
-.product-detail-2{
+.product-detail-2 {
     width: calc(100% / 2);
-    height: 40px;
+
 }
-.product-detail-1{
-    background-color: rosybrown;
+
+.product-detail-1 {
+    /*background-color: rosybrown;*/
+    position: relative;
 }
-.product-detail-1 p{
+
+.product-detail-1 p {
     font-family: sans-serif;
     font-size: 16px;
     font-weight: 600;
 }
-.product-detail-1 p span{
+
+.product-detail-1 p span {
     color: #707070;
     text-decoration: line-through;
 }
-.product-detail-2{
-    background-color: lightblue;
+.product-detail-1 a{
+    font-family: sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+    position: absolute;
+    top: 0;
+    left: 100px;
+    white-space: nowrap;
+    opacity: 0;
+}
+
+.product-detail-2 {
+    /*background-color: lightblue;*/
     display: flex;
     justify-content: right;
 }
-.product-detail-2 ul li{
+
+.product-detail-2 ul li {
     list-style: none;
     display: inline-block;
-    margin: 0 3px;
-}
-.product-detail-2 ul li i{
-  color: var(--main-color);
+    
 }
 
+.product-detail-2 ul li i {
+    color: var(--main-color);
+}
