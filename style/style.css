@@ -605,5 +605,15 @@ display: flex;
 }
 .product-detail-2{
     background-color: lightblue;
+    display: flex;
+    justify-content: right;
+}
+.product-detail-2 ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 3px;
+}
+.product-detail-2 ul li i{
+  color: var(--main-color);
 }
 
